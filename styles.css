@@ -1,24 +1,24 @@
 /* CSS Reset */
 *, *::before, *::after {
     box-sizing: border-box;
-  }
-  * {
+}
+* {
     margin: 0;
-  }
-  body {
+}
+body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-  }
-  img, picture, video, canvas, svg {
+}
+img, picture, video, canvas, svg {
     display: block;
     max-width: 100%;
-  }
-  input, button, textarea, select {
+}
+input, button, textarea, select {
     font: inherit;
-  }
-  p, h1, h2, h3, h4, h5, h6 {
+}
+p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
-  }
+}
 
 /* Root element */
 :root{
@@ -46,7 +46,6 @@ body{
     font-family: var(--ff-primary);
     width: auto;
     height: 100vh;
-    
 }
 .card{
     margin: 1.5rem;
@@ -77,7 +76,6 @@ body{
     font-weight: var(--fw-ultrabold);
     color: var(--clr-neutral-400);
     padding: 1.5em 0;
-    
 }
 .card__container p{
     font-size: var(--fs-base);
@@ -87,51 +85,47 @@ body{
     padding-left: 2em;
     padding-right: 2em;
     padding-bottom: 1em;
-    
 }
 .card__component{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: space-between;
+    align-items: center;
     gap: 2em;
     background-color: var(--clr-neutral-100);
     padding: 1rem 0.5rem;
     border-radius: 1em;
     margin: 0.5em 1.5em;
- 
 }
 .card__component-details{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: space-between;
+    align-items: center;
     gap: 1em;
 }
-.plans :nth-child(1){
+.plans h2{
     font-size: var(--fs-base);
     font-weight: var(--fw-bold);
     color: var(--clr-neutral-400);
-
 }
-.plans :nth-child(2){
+.plans p{
     font-size: var(--fs-base);
     font-weight: var(--fw-base);
     color: var(--clr-neutral-200);
 }
 .card__component-details img{
     color: var(--clr-neutral-200);
-    
-}
-.card__component button{
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
 }
 .card__link-button{
     color: var(--clr-primary-400);
     font-size: var(--fs-base);
     font-weight: var(--fw-bold);
+    text-decoration: underline;
+}
+.card__link-button:hover,
+.card__link-button:focus {
+    color: hsl(245, 56%, 62%);
 }
 .buttons{
     display: flex;
@@ -140,7 +134,6 @@ body{
     align-items: center;
     gap: 1em;
     padding: 1em 1.5em;
-    text-decoration: none;
 }
 .primary{
     background-color: var(--clr-primary-400);
@@ -152,7 +145,7 @@ body{
     border: none;
     cursor: pointer;
     width: 100%;
-    box-shadow: 0px 10px 50px 0px hsl(245, 56%, 62%);
+    box-shadow: 0px 8px 20px hsla(254, 56%, 62%, 0.4);
 }
 .secondary{
     background-color: transparent;
@@ -173,13 +166,13 @@ body{
     background-color: hsl(245, 56%, 62%);
     color: white;
 }
-/* .card__link-button a:hover{ }*/
+@media screen and (min-width:600px){
     
-
-.card__link-button a:focus{
-    color: hsl(245, 56%, 62%);
-}
-@media  (min-width: 600px) {
-    
+    .card{
+        margin: 3rem;
+    }
+    .card__component{
+        gap: 10em;
+    }
     
 }
