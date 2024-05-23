@@ -20,7 +20,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](/design/Final%20Design%20Desktop%20Preview.png)
+![](./design/Final%20Design%20Desktop%20Preview.png)
 ![](./design/Final%20Design%20Tablet%20Preview.png)
 ![](./design/Final%20Design%20Mobile%20Preview.png)
 
